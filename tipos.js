@@ -20,8 +20,8 @@ console.log(typeof(2.3))
 console.log(true)
 console.log(typeof(true))
 
-console.log(a)
-console.log(typeof(a))
+console.log("a")
+console.log(typeof("a"))
 
 console.log([])
 console.log(typeof([]))
