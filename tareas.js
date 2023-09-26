@@ -1,13 +1,8 @@
 const inputTarea = document.getElementById('inputTarea');
 const listaTareas = document.querySelector('#tareas ul');
-const inputImage = Document.getElementById('loadImage');
-const image = document.getElementById('image');
 
-function addImage(){
-    const imagen = inputImage.value
-    image.src = imagen;
-    inputImage.value = '';
-}
+
+
 
 const lista = [];
 
