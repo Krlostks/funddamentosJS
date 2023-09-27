@@ -6,12 +6,17 @@ const blue = document.querySelector('#blue');
 
 function setColor(){
     //rgb (0,255,14);
+    //rgb (0,255, 35, 0.5);
     const redVal = red.value * 2.6 ;
     const greenVal = green.value *2.6;
     const blueVal  = blue.value * 2.6;
-    const rgbaColor = `rgb(${ redVal}, ${ greenVal}, ${ blueVal})`;
+    const transVal  = trans.value * 2.6;
+    const rgbaColor = `rgb(${ redVal}, ${ greenVal}, ${ blueVal}, ${ transVal})`;
     body.style.background = rgbaColor;
 }
 
 setColor();
-btnColor.addEventListener('click', setColor);
+red.addEventListener('input', setColor);
+green.addEventListener('input', setColor);
+blue.addEventListener('input', setColor);
+trans.addEventListener('input', setColor);

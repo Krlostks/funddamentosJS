@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Set Colors</title>
-    <link rel="stylesheet" href="./">
     <style>
         body{
             width: 100vw;
@@ -12,14 +11,28 @@
             display: grid;
             place-items: center;
             font-family: Arial, Helvetica, sans-serif;
+            transition: 0.7s;
         }
         .container{
             width: 400px;
             padding: 20px;
             text-align: center;
+            text-
         }
         .container * {
             width: 80%;
+        }
+        button{
+            color: aliceblue;
+            background-color: rgb(3, 6, 26);
+            transition: 0.3s;
+            border-color: rgba(209, 209, 209, 0);
+        }
+        button:hover{
+            color: rgb(0, 0, 0) ;
+            background-color: rgba(240, 248, 255, 0);
+            border-color:rgb(106, 109, 110) ;
+            
         }
         
     </style>
@@ -28,12 +41,16 @@
     <div class="container">
         <h1>Set colors</h1>
         <input type="range" id="red">
+        RED
         <br>
         <input type="range" id="green">
+        GREEN
         <br>
         <input type="range" id="blue">
+        BLUE 
         <br>
-        <button id="btnColor">Set Color</button>
+        <input type="range" id="trans">
+        TRANS<br>
     </div>
     <script src="./coloresrgba.js"></script>
 </body>
