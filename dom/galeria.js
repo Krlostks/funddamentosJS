@@ -1,8 +1,8 @@
 const container = document.querySelector('.container');
-const image = document.querySelector('#image')
+const image = docment.querySelector('#image')
 function setImage(e){
-    const imageSrc = e.target.src; 
+    const imgeSrc = e.target.src; 
     image.src = imageSrc; 
 }
 
-container.addEventListener('click', setImage)
+container.addEventListener('click', setmage)
